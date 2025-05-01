@@ -1,6 +1,7 @@
-#📝 Project Report: Customer Churn Prediction (Telco Dataset)
-📊 1. Exploratory Data Analysis (EDA)
-Data Summary:
+# 📝 Project Report: Customer Churn Prediction (Telco Dataset)
+
+## 📊 1. Exploratory Data Analysis (EDA)
+### Data Summary:
 Rows: 7,043 customers
 
 Features: 21 variables (categorical and numerical)
@@ -13,14 +14,14 @@ Churned: ~26.5%
 Not Churned: ~73.5%
 ✅ Class imbalance detected — potential need for resampling techniques during model training.
 
-🧹 2. Data Cleaning & Preparation
+## 🧹 2. Data Cleaning & Preparation
 TotalCharges was converted to numeric (had nulls & strings).
 
 11 missing values were found in TotalCharges for customers with 0 tenure → filled with 0.
 
 Converted Churn to binary (0/1).
 
-📈 3. Univariate & Bivariate Analysis
+## 📈 3. Univariate & Bivariate Analysis
 Key Insights:
 Tenure:
 
@@ -55,7 +56,7 @@ Fiber optic users churn more than DSL.
 
 Customers with no technical support or online security churn more.
 
-🔍 4. Correlation & Statistical Tests
+## 🔍 4. Correlation & Statistical Tests
 Top Correlated with Churn:
 
 Tenure (-0.35)
@@ -72,7 +73,7 @@ Chi-square tests found most categorical features (e.g., Contract, TechSupport) t
 
 Gender and PhoneService were not statistically significant.
 
-🧠 5. Feature Engineering
+## 🧠 5. Feature Engineering
 Created several new features:
 
 ServiceCount: Count of services used
@@ -93,12 +94,12 @@ HasAllStreamingServices
 
 ✅ Several engineered features showed strong correlation and distributional separation with churn.
 
-📉 6. Outlier Detection
+## 📉 6. Outlier Detection
 IQR method applied.
 
 No significant outliers detected in tenure, MonthlyCharges, or TotalCharges.
 
-🌟 7. Feature Importance (Random Forest)
+## 🌟 7. Feature Importance (Random Forest)
 Top 10 Important Features (Random Forest Classifier):
 
 tenure
@@ -138,7 +139,7 @@ Electronic Check Payment
 
 Paperless Billing
 
-🔄 Next Recommended Steps
+## 🔄 Next Recommended Steps
 Model Building:
 
 Try multiple models (Random Forest, XGBoost, Logistic Regression, etc.)
